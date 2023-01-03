@@ -6,13 +6,22 @@ public class EmployeeWage {
 	public static void main(String[] args) {
 		System.out.println("Welcome to Employee Wage Java Program");
 
-		Random random = new Random();
+		Random random = new Random(); // using random for storing values.
+
+		int wagePerHrs = 20;
+
+		int fullDayHrs = 8;
+
+		int salary = 0;
+
 		int randomNum = random.nextInt(2);
 
-		if (randomNum == 1)
+		if (randomNum == 1) {
 			System.out.println("Employee is Present");
-		else
+			salary = wagePerHrs * fullDayHrs;
+		} else
 			System.out.println("Employee is Absent");
+		System.out.println("Salary is: " + salary);
 	}
 
 }
